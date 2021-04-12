@@ -104,7 +104,7 @@ pipeline {
       		}
     	}
   	}
-	post { 
+	/*post { 
         success { 
   			script {
 			//TODO read mergeReport json file
@@ -122,7 +122,7 @@ pipeline {
 			sh "git clean -d -fx . && git checkout -f init && git config --unset credential.helper"
 		    //TODO call maintenance email
 		}
-    }
+    }*/
 }
 
 
