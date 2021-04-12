@@ -12,7 +12,7 @@ pipeline {
 
 
 	environment {
-		CONFIGS = '{
+		CONFIGS = '''{																									
 			repositoryConfigs:[
 				{
 					name: "repository1",
@@ -39,7 +39,7 @@ pipeline {
 					manyToManyMapping: ""
 				}
 			]
-		}' 
+		}'''
 		
 		SEND_SUCCESS_EMAIL_TO = 'francisco.pinelas@celfocus.com'
 		SEND_SUCCESS_EMAIL_SUBJECT = 'Automatic merge results report'
