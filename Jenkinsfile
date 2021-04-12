@@ -4,7 +4,6 @@ pipeline {
 				dir 'exercise'
 			}
 		}
-  	}
   	
   	options { 
 		disableConcurrentBuilds()
