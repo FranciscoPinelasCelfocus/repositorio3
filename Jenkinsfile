@@ -67,6 +67,7 @@ pipeline {
 					    }
       		}
     	}
+		}
     	stage('Perform Merges') {
       		steps { 
       			script {
