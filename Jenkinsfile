@@ -1,7 +1,8 @@
 pipeline {
 	agent {
 			dockerfile{
-				dir 'exercise'
+				//dir 'exercise'
+				file Dockerfile
 			}
 		}
   	
