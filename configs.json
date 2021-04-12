@@ -1,0 +1,23 @@
+{
+	"repositoryConfigs":[
+		{
+			"name": "repository1",
+			"urlWithoutProtocol": "github.com/jorgemilhazespereira/repository1",
+			"credentialId": ""
+		},
+		{
+			"name": "repository2",
+			"urlWithoutProtocol": "github.com/jorgemilhazespereira/repository2",
+			"credentialId": ""
+		}
+	],
+	"mergeConfigs": [
+		{
+			"sourceRepository": "repository1",
+			"targetRepository": "repository2",
+			"oneToOneMapping": "main:main",
+			"oneToManyMapping": "",
+			"manyToManyMapping": ""
+		}
+	]
+}
