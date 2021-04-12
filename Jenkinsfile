@@ -11,34 +11,34 @@ pipeline {
 
 
 	environment {
-		CONFIGS = '''{																									
-			repositoryConfigs:[
-				{
-					name: "repository1",
-					urlWithoutProtocol: "github.com/FranciscoPinelasCelfocus/repositorio1",
-					credentialId: "CREDENTIAL_ID_NB25023"
-				},
-				{
-					name: "repository2",
-					urlWithoutProtocol: "github.com/FranciscoPinelasCelfocus/repositorio2",
-					credentialId": "CREDENTIAL_ID_NB25023"
-				},
-				{
-					name: "repository3",
-					urlWithoutProtocol: "github.com/FranciscoPinelasCelfocus/repositorio3",
-					credentialId": "CREDENTIAL_ID_NB25023"
-				}
-			],
-			mergeConfigs: [
-				{
-					sourceRepository: "repository1",
-					targetRepository: "repository2",
-					oneToOneMapping: "main:main",
-					oneToManyMapping: "",
-					manyToManyMapping: ""
-				}
-			]
-		}'''
+		CONFIGS = '{																									\
+			repositoryConfigs:[																									\
+				{																									\
+					name: "repository1",																									\
+					urlWithoutProtocol: "github.com/FranciscoPinelasCelfocus/repositorio1",					\
+					credentialId: "CREDENTIAL_ID_NB25023"					\
+				},					\
+				{					\
+					name: "repository2",					\
+					urlWithoutProtocol: "github.com/FranciscoPinelasCelfocus/repositorio2",					\
+					credentialId": "CREDENTIAL_ID_NB25023"					\
+				},					\
+				{					\
+					name: "repository3",					\
+					urlWithoutProtocol: "github.com/FranciscoPinelasCelfocus/repositorio3",					\
+					credentialId": "CREDENTIAL_ID_NB25023"					\
+				}					\
+			],					\
+			mergeConfigs: [					\
+				{					\
+					sourceRepository: "repository1",					\
+					targetRepository: "repository2",					\
+					oneToOneMapping: "main:main",					\
+					oneToManyMapping: "",					\
+					manyToManyMapping: ""					\
+				}					\
+			]					\
+		}'
 		
 		SEND_SUCCESS_EMAIL_TO = 'francisco.pinelas@celfocus.com'
 		SEND_SUCCESS_EMAIL_SUBJECT = 'Automatic merge results report'
@@ -123,6 +123,7 @@ pipeline {
 		}
     }
 }
+
 
 /*****************************************
 * Send a Success email
