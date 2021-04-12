@@ -366,9 +366,9 @@ def performMerges(sourceRepository = '', targetRepository = '', oneToOneMapping 
 	// Then call mergeBranches with the requested parameters
 	// Analyse mergeBranches
 	
-	oneToOneMappingList.each { oneToOneMapping ->
-		if (oneToOneMapping.contains(":")) {
-			def oneToOneMappingBranches = oneToOneMapping.split(':')
+	oneToOneMappingList.each { oneToOneMappingBranch ->
+		if (oneToOneMappingBranch.contains(":")) {
+			def oneToOneMappingBranches = oneToOneMappingBranch.split(':')
 			def sourceBranch = oneToOneMappingBranches[0]
 			def targetBranch = oneToOneMappingBranches[1]
 			
